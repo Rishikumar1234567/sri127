@@ -17,4 +17,3 @@ COPY  --from=build /app/build /usr/share/nginx/html
 # exposing the  port of the container to the out side world
 EXPOSE 80
 CMD ["nginx","-g","daemon off;"]
-
