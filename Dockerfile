@@ -11,7 +11,7 @@ COPY . .
 RUN npm run build
 # copy the remainf files to the root directory
 # stage 2 that is from nginx serving app
-FROM nginx:alpine uild from the  previous build
+FROM nginx:alpine 
 COPY  --from=build /app/build /usr/share/nginx/html
 # exposing the  port of the container to the out side world
 EXPOSE 80
